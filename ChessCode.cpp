@@ -191,7 +191,7 @@ int input(int num,int cat)
       if(board[d][c] == " ")
       {
         //En Passant CheckPoint
-      if(abs(a-c)==1 && abs(b-d)==1)
+    if(abs(a-c)==1 && abs(b-d)==1 && (board[b][a]=="♙"||board[b][a]=="♟"))
       {
       board[d][c]=board[b][a];
       board[b][a]=" ";
